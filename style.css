@@ -1,0 +1,56 @@
+body {
+    margin: 100px;
+    padding:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #050210;
+}
+
+.circle {
+    position: relative;
+    width: 60vh;
+    height: 60vh;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+        box-shadow: 0 0 70px 5px #fb5dad, 0 0 70px 5px#55fb9f, 0 0 70px 5px #b97aff ;
+        
+    }
+
+    to{
+        transform: rotate(360deg);
+        box-shadow: 0 0 70px 5px #fb5dad, 0 0 70px 5px #55fb9f, 0 0 70px 5px #b97aff;
+        
+
+    }
+}
+
+
+
+.circle:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 200px;
+    background-color: #050210;
+}
+
+.circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    border-radius: 100%;
+}
+
+
+
